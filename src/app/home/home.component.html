@@ -1,0 +1,21 @@
+<p>home works!</p>
+<table>
+    <thead>
+      <tr>
+        <th>Registro</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.surname}}</td>
+        <td>{{user.age}}</td>
+      </tr>
+    </tbody>
+</table>
+
+<a routerLink="/about" routerLinkActive="active">About Component</a>
